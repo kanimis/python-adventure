@@ -91,3 +91,60 @@ while(decision == ""):
 print()
 time.sleep(1)
 #            ---section end---           #
+
+#    ---Section Author: Amber---   #
+print("There is a warrior who stands in your way!") 
+print("1. Fight him!") 
+print("2. Try negotiating with him") 
+print() 
+decision = "" 
+while(decision == ""):     
+    decision = input("Pick a number: ")     
+    print()     
+    if (decision == "1"):         
+        print("You got injured but you steal his money!!!")         
+        player_health -= 20         
+        print("Your health now:")         
+        print(player_health)     
+    elif (decision == "2"):         
+        print("You are able to get him to work with you on your mission")         
+        player_items.append("Warrior")         
+        print("Your items now:")         
+        print(player_items) 
+print() 
+time.sleep(1)
+#            ---section end---           #
+
+#    ---Section Author: James---   #
+print("A representative of the United Nations offers you $100 to enter a cease-fire agreement with King Rogsam!") 
+print("1. Agree and collect $100") 
+print("2. Try negotiating with him for more money")
+print("3. Reject the offer and continue fighting King Rogsam")
+print() 
+decision = "" 
+while(decision == ""):     
+    decision = input("Pick a number: ")     
+    print()     
+    if (decision == "1"):         
+        print("You collect the money, but King Rogsam is a liar and launches a catapult full of rocks at you anyway!!!")         
+        player_money += 100         
+        print("Your money now:")         
+        print(player_money) 
+        player_health -= 30         
+        print("Your health now:")         
+        print(player_health)
+
+    elif (decision == "2"):         
+        print("The UN Security Counsel must consider your counteroffer, they provide you with a peacekeeping force in the interim")         
+        player_items.append("UN_Peacekeepers")         
+        print("Your items now:")         
+        print(player_items) 
+
+    elif (decision == "3"):
+        print("Your shrewd diplomatic brinksmanship has prevailed, King Rogsam retreats in alarm and accidentally drops the credentials for his Netflix account!")
+        player_items.append("Netflix_Password")
+        print("Your items now:")         
+        print(player_items)
+#            ---section end---           #
+print() 
+time.sleep(1)
